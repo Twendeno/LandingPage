@@ -1,0 +1,56 @@
+.presentation{
+
+    display: flex;
+    height: 90vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    >.acceuil{
+        margin-top: -300px;
+        color: rgb(0, 0, 0);
+        margin-bottom: 50px;
+    }
+    font-family: 'Pacifico', cursive;
+}
+
+.logo {
+    text-align: left;
+    font-family: 'Pacifico', cursive; /* Utilisation d'une police décorative */
+    font-size: 24px; /* Taille du texte */
+    color: #FF4500; /* Couleur orange attrayante */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Ombre portée pour plus de profondeur */
+    letter-spacing: 1px; /* Espacement entre les lettres */
+    margin-bottom: 10px; /* Marge inférieure pour l'espacement */
+}
+
+.logo mat-icon {
+    font-size: 24px; /* Taille de l'icône */
+    margin-right: 4px; /* Marge à droite de l'icône */
+}
+.map{
+    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(176,229,208,1) 42%, rgba(92,202,238,0.41) 93.6% );
+    
+    border: rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    margin-top: 10px;
+    box-shadow:2px 2px 4px rgba(0, 0, 0, 0.3);  
+    padding: 10px;
+}
+.init{
+    background-image: url('/assets/images/1.png');
+    background-size: cover;
+    background-position: center;
+    padding: 10px;
+    height: 100vh;
+}
+@media only screen and (max-width: 767px) {
+    .presentation {
+        >.acceuil{
+            margin-top: -200px;
+            margin-bottom: 50px;
+        }
+    }
+    .init{
+        background-image: url('/assets/images/1mobile.png');
+    }
+}

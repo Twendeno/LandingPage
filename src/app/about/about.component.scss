@@ -1,0 +1,51 @@
+.about{
+    text-align: center;
+   font-size: 12px;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    .theme{
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        font-family: 'Pacifico', cursive;
+    }
+    .cards{
+        margin-top: 10px;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        >.item{
+            overflow: hidden; 
+            width: 250px; 
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            word-wrap: break-word;
+            >img{
+                width: 200px; 
+            }
+            &.bas{
+            margin-top: 70px;
+            }
+        }
+
+    }
+}
+
+@media (max-width: 50em) {
+    .cards{
+        flex-direction: column !important; 
+    }
+    .about{
+        height: auto;
+        margin: 10px;
+    }
+    .item{
+        margin: 10px;
+        &.bas{
+            margin-top: 0px;
+        }
+    }
+}
